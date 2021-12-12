@@ -63,7 +63,7 @@ body {
     margin-bottom: 0;
   }
   
-  /* .input-email {
+  header > input, .try-it > input {
     width: 280px;
     padding: 10px;
     display: block;
@@ -71,7 +71,7 @@ body {
     font-size: 0.8em;
     border-radius: 5px;
     border-color: #5b5e6d;
-  } */
+  }
   
   header > h1 {
     font-size: 2em;
@@ -79,6 +79,7 @@ body {
   
   header > p {
     font-size: 0.8em;
+    text-align: center;
   }
   
   /* .sign-in {
@@ -95,6 +96,7 @@ body {
     background-color: #f4f3f4;
     text-align: center;
     padding: 20px 0;
+
   }
   
   .icons > h2 {
@@ -108,6 +110,7 @@ body {
     padding-top: 20px;
     padding: 30px;
     margin-top: 40px;
+
   }
     
  
@@ -122,7 +125,6 @@ body {
   
   .try-it {
     text-align: center;
-    padding: 20px 0;
   }
   
   .try-it > p {
@@ -130,9 +132,9 @@ body {
     margin-bottom: 0;
   }
   
-  .already {
-    font-size: 0.8em;
-  }
+  /* .already {
+    font-size: 1.2em;
+  } */
   
   .try-it > a {
     text-decoration: underline;
@@ -168,7 +170,9 @@ body {
     color: #5b5e6d;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;    
+
+    
   }
   
   /* Footer Styles */
@@ -227,7 +231,7 @@ body {
     width: 280px;
     font-size: 0.8em;
     text-align: center;
-    margin: 10px auto;
+    margin: px auto;
   }
   
   header > button, .try-it > button {
@@ -249,7 +253,7 @@ body {
   
   /* @media queries */
   
-  @media screen and (min-width: 768px) {
+  /* @media (max-width: 768px) {
     /* .inputs {
       display: flex;
       position: absolute;
@@ -264,13 +268,8 @@ body {
     .inputs button {
       width: 180px;
     }*/
-  
-    header > button, .try-it > button {
-      position: absolute;
-      padding-top: 75px;
-    } 
 
-    header > img {
+    /* header > img {
       width: 350px;
       padding-top: 130px;
       display: block;
@@ -281,7 +280,7 @@ body {
       display: flex;
       text-align: left;
       align-items: center;
-    }
+    } */
   
     /* .try-it input {
       margin-top: 0;
@@ -289,7 +288,7 @@ body {
       font-size: 0.8em;
     } */
   
-    header > p {
+    /* header > p {
       position: absolute;
       left: -1px;
       margin-top: 100px;
@@ -301,7 +300,7 @@ body {
     }
   
     .information > img {
-      width: 10%;
+      width: 30%;
     }
   
     .subfooter {
@@ -321,10 +320,127 @@ body {
     .social {
       margin-bottom: 0;
     }
+  } */ 
+
+  @media (max-width: 961px) and (min-width: 767px) {
+
+    header > h1 {
+        font-size: 3em;
+        text-align: center;
+      }
+      
+      header > p {
+        font-size: 1em;
+        text-align: center;
+      }
+
+    header > button, .try-it > button {       
+        padding: 30px;
+        width: 200px;
+        font-size: 1em;
+        position: relative;
+        left: 200px;
+        bottom: 40px;
+    } 
+
+    header > input, .try-it > input {
+        position: relative;
+        top: 50px;
+        right: 200px;
+        width: 400px;
+        padding: 30px;
+    }
+  
+    
+    .icons {
+        display: block;
+    }
+
+    .icons > img {
+        width: 250px;
+        margin-left: 50px;
+        margin-right: 50px;
+        
+    }
+
+    .icons > p {
+        padding: 5px;
+    }
+
+    .icons > button {
+      padding: 20px;
+      width: 35%;
+      border-radius: 8px;
+      font-size: 20px;
+      margin-bottom: 20px;
+      margin-top: 1%;
+    }
+      
+      .try-it > p {
+        font-size: 1.5em;
+      }
+      
+
+
+    /* .information {
+        /* display: grid;
+        width: 50%;
+        height: 100px;
+        grid-template-areas: 
+        "photo"
+        "ul1 ul2"
+        "ul3 ul4";
+        grid-template-columns: auto auto;
+        grid-template-rows: 80px 0px;
+        grid-gap: 200px;
+        padding: 500px 0; */
+    
+    /* .information > img {
+        grid-area: photo;
+    }
+
+    .ul1 {
+        grid-area: ul1;
+    }
+
+    .ul2 {
+        grid-area: ul2;
+    }
+
+    .ul3 {
+        grid-area: ul3;
+    }
+
+    .ul4 {
+        grid-area: ul4;
+    } */ 
+
+    .subfooter {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+        font-size: 1em;
+        font-weight: bolder;
+      }
+    
+      .subfooter > ul {
+        width: 400px;
+        margin-bottom: 0;
+      }
+    
+      .social {
+        margin-bottom: 0;
+      }
+
+}
+
+  @media (max-width: 1024px) and (min-width: 960px) {
+
   }
   
-  @media screen and (min-width: 1200px) {
-    .hero h1 {
+  @media (min-width: 1200px) {
+    header h1 {
       font-size: 3em;
     }
   
@@ -332,29 +448,31 @@ body {
       width: 60%;
       display: flex;
       justify-content: space-evenly;
-    }
-  
-    .navicon {
-      display: none;
-    }
-  
-    nav ul {
       align-items: center;
     }
   
-    nav ul li {
+    nav > i {
+      display: none;
+    }
+  
+    /* nav ul {
+      align-items: center;
+    } */
+  
+    nav > ul > li {
       list-style: none;
     }
   
-    .hero {
+    header {
       height: 500px;
       align-content: center;
-    }
-  
-    .hero .container {
       padding-top: 40px;
     }
-    .hero img {
+  
+    /* .hero .container {
+      padding-top: 40px;
+    } */
+    header > img {
       padding-top: 0;
     }
   
@@ -363,11 +481,11 @@ body {
       justify-content: space-around;
     }
   
-    .try-it input {
+    /* .try-it input {
       display: none;
-    }
+    } */
   
-    .try-it .button {
+    .try-it > button {
       position: relative;
       left: 300px;
     }
