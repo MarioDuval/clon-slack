@@ -361,12 +361,21 @@ body {
       margin-top: 1%;
     }
       
-      .try-it > p {
+    .try-it > p {
         font-size: 1.5em;
       }
 
-      .information {
-        display: flex;      
+    .information > img {
+        width: 200px;
+        height: 200px;
+                
+    }
+
+    .information {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;   
       }
 
 
